@@ -1,3 +1,4 @@
+import { BasicHighlightDirective } from './_directives/basic-highlight.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +12,7 @@ import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { BetterHighlightDirective } from './_directives/better-highlight.directive';
 
 @NgModule({
    declarations: [
@@ -21,7 +23,9 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
       RecipeItemComponent,
       RecipeDetailComponent,
       ShoppingListComponent,
-      ShoppingEditComponent
+      ShoppingEditComponent,
+      BasicHighlightDirective,
+      BetterHighlightDirective
    ],
    imports: [
       BrowserModule,
