@@ -1,3 +1,5 @@
+import { DropdownDirective } from './_directives/dropdown.directive';
+import { UnlessDirective } from './_directives/unless.directive';
 import { BasicHighlightDirective } from './_directives/basic-highlight.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -25,7 +27,9 @@ import { BetterHighlightDirective } from './_directives/better-highlight.directi
       ShoppingListComponent,
       ShoppingEditComponent,
       BasicHighlightDirective,
-      BetterHighlightDirective
+      BetterHighlightDirective,
+      UnlessDirective,
+      DropdownDirective
    ],
    imports: [
       BrowserModule,
