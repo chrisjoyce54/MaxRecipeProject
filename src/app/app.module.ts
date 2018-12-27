@@ -15,6 +15,9 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { BetterHighlightDirective } from './_directives/better-highlight.directive';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { RecipesStartComponent } from './recipes/recipes-start/recipes-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
    declarations: [
@@ -29,12 +32,15 @@ import { BetterHighlightDirective } from './_directives/better-highlight.directi
       BasicHighlightDirective,
       BetterHighlightDirective,
       UnlessDirective,
-      DropdownDirective
+      DropdownDirective,
+      RecipesStartComponent,
+      RecipeEditComponent
    ],
    imports: [
       BrowserModule,
       FormsModule,
-      HttpModule
+      HttpModule,
+      AppRoutingModule
    ],
    providers: [],
    bootstrap: [
