@@ -8,17 +8,18 @@ import { RecipeService } from './recipe.service';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  selectedRecipe: RecipeModel;
+  // selectedRecipe: RecipeModel;
 
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
-    this.recipeService.recipeSelected
-      .subscribe(
-        (recipe: RecipeModel) => {
-        this.selectedRecipe = recipe;
-      }
-      );
+    // No longer needed we removed emitter
+    // this.recipeService.recipeSelected
+    //   .subscribe(
+    //     (recipe: RecipeModel) => {
+    //     this.selectedRecipe = recipe;
+    //   }
+    //   );
   }
 
 }
